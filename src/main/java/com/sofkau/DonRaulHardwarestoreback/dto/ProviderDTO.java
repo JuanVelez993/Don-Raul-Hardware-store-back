@@ -2,12 +2,11 @@ package com.sofkau.DonRaulHardwarestoreback.dto;
 
 import lombok.Data;
 
-import java.util.UUID;
-
 @Data
 public class ProviderDTO {
-    private String id= UUID.randomUUID().toString().substring(0, 10);
+    private String id;
     private String name;
+    private String identification;
     private String phone;
     private String adress;
 }
