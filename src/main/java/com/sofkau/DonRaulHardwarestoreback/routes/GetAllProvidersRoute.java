@@ -15,7 +15,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 @Configuration
 public class GetAllProvidersRoute {
     @Bean
-    public RouterFunction<ServerResponse> getAllProviders(GetAllProviders getAllProviders){
+    public RouterFunction<ServerResponse> getAllProvidersRouter(GetAllProviders getAllProviders){
         return route(GET("/all/providers"),
                 request -> ServerResponse.ok()
                         .contentType(MediaType.APPLICATION_JSON)
