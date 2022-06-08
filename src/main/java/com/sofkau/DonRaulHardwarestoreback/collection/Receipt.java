@@ -13,8 +13,8 @@ public class Receipt {
     @Id
     private String id;
     private LocalDateTime date;
-    private String providerName;
-    private String providerId;
-    private List<Product> products;
-    private Double total;
+    private String description;
+    private Integer units;
+    private String productId;
+    private Provider provider;
 }

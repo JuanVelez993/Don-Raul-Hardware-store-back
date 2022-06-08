@@ -12,5 +12,5 @@ public class Provider {
     private String name;
     private String identification;
     private String phone;
-    private String adress;
+
 }

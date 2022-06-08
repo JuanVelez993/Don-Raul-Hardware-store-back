@@ -8,5 +8,5 @@ public class ProviderDTO {
     private String name;
     private String identification;
     private String phone;
-    private String adress;
+
 }

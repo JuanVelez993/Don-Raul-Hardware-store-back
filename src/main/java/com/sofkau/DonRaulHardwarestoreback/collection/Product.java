@@ -10,7 +10,7 @@ public class Product {
     @Id
     private String id;
 
-    private String name;
+    private String description;
 
     private Integer currentInventory;
 
