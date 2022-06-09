@@ -12,7 +12,7 @@ import java.util.List;
 public class Receipt {
     @Id
     private String id;
-    private LocalDateTime date;
+    private String date;
     private String description;
     private Integer units;
     private String productId;

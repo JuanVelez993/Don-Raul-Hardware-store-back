@@ -4,10 +4,12 @@ import com.sofkau.DonRaulHardwarestoreback.dto.ProductDTO;
 import com.sofkau.DonRaulHardwarestoreback.mapper.ProductMapper;
 import com.sofkau.DonRaulHardwarestoreback.repository.ProductRepository;
 import com.sofkau.DonRaulHardwarestoreback.usecase.interfaces.UpdateProduct;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.util.Objects;
 
+@Service
 public class UpdateProductCase implements UpdateProduct {
     private final ProductRepository productRepository;
     private final ProductMapper productMapper;

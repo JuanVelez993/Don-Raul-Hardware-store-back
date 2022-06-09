@@ -16,7 +16,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 import static org.springframework.web.reactive.function.server.RouterFunctions.route;
 
 @Configuration
-public class UpdateProviderRoute {
+public class UpdateProductRoute {
     @Bean
     public RouterFunction<ServerResponse> updateProduct(UpdateProductCase updateProductCase){
         Function<ProductDTO, Mono<ServerResponse>> executor =
