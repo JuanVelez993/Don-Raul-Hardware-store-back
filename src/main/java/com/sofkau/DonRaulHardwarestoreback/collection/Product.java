@@ -1,5 +1,6 @@
 package com.sofkau.DonRaulHardwarestoreback.collection;
 
+import com.sofkau.DonRaulHardwarestoreback.dto.ProviderDTO;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -20,7 +21,7 @@ public class Product {
 
     private Double price;
 
-    private Provider provider;
+    private ProviderDTO provider;
 
 
 }

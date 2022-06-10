@@ -19,5 +19,5 @@ public class ProductDTO {
 
     private Double price;
 
-    private Provider provider;
+    private ProviderDTO provider;
 }
