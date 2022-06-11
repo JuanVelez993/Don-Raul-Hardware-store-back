@@ -1,5 +1,6 @@
 package com.sofkau.DonRaulHardwarestoreback.collection;
 
+import com.sofkau.DonRaulHardwarestoreback.dto.ProductDTO;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -12,9 +13,9 @@ import java.util.List;
 public class Bill {
     @Id
     private String id;
-    private LocalDateTime date;
+    private String date;
     private String client;
     private String clerk;
-    private List<Product> products;
+    private List<ProductDTO> products;
     private Double total;
 }
