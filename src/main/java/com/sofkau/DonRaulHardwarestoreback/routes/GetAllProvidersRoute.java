@@ -1,7 +1,7 @@
 package com.sofkau.DonRaulHardwarestoreback.routes;
 
 import com.sofkau.DonRaulHardwarestoreback.dto.ProviderDTO;
-import com.sofkau.DonRaulHardwarestoreback.usecase.GetAllProviders;
+import com.sofkau.DonRaulHardwarestoreback.usecase.GetAllProvidersCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
@@ -15,7 +15,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 @Configuration
 public class GetAllProvidersRoute {
     @Bean
-    public RouterFunction<ServerResponse> getAllProvidersRouter(GetAllProviders getAllProviders){
+    public RouterFunction<ServerResponse> getAllProvidersRouter(GetAllProvidersCase getAllProviders){
         return route(GET("/all/providers"),
                 request -> ServerResponse.ok()
                         .contentType(MediaType.APPLICATION_JSON)

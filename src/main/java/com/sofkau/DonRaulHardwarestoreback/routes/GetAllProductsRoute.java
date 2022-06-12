@@ -1,9 +1,7 @@
 package com.sofkau.DonRaulHardwarestoreback.routes;
 
 import com.sofkau.DonRaulHardwarestoreback.dto.ProductDTO;
-import com.sofkau.DonRaulHardwarestoreback.dto.ProviderDTO;
 import com.sofkau.DonRaulHardwarestoreback.usecase.GetAllProductsCase;
-import com.sofkau.DonRaulHardwarestoreback.usecase.GetAllProviders;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;

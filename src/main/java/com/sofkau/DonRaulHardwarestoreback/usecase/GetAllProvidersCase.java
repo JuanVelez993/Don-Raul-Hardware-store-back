@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 
 @Service
-public class GetAllProviders {
+public class GetAllProvidersCase {
 
     private final ProviderRepository providerRepository;
     private final ProviderMapper providerMapper;
 
-    public GetAllProviders(ProviderRepository providerRepository, ProviderMapper providerMapper) {
+    public GetAllProvidersCase(ProviderRepository providerRepository, ProviderMapper providerMapper) {
         this.providerRepository = providerRepository;
         this.providerMapper = providerMapper;
     }
